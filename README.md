@@ -32,7 +32,9 @@ Grab the `*.ngrok.io` URL and add it as webhook on your repo.
 ### How it looks like
 
  > Syntax Errors
- ![demo-1](./image/demo-image-1.png)
+ >
+ > ![demo-1](./image/demo-image-1.png)
  
  > Breaking Changes
- ![demo-2](./image/demo-image-2.png)
+ > 
+ > ![demo-2](./image/demo-image-2.png)
