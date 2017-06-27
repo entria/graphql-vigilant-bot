@@ -19,14 +19,15 @@ A Dockerfile is also provided, you can use it to run the bot:
 docker build -t graphql-vigilant-bot .
 docker run --env-file ./.env -p 7010:7010 graphql-vigilant-bot
 ```
-
-#### docker-compose
-
-`docker-compose up`
+Or use `docker-compose`:
+```bash
+docker-compose up
+```
 
 The bot will be available at http://localhost.
 
-Or you can deploy directly to Heroku:
+You can also deploy directly to Heroku:
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Setup
