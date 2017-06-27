@@ -1,19 +1,40 @@
-# graphql-findbreakingchanges-bot
+# GraphQLVigilantBot
 
 ## Installation
-Clone this repository, then run
-
-`yarn install` or `npm install`
-
-Check `.env.example` for which environment variables you need to set before
-  running this bot.
+First clone this repository, then check `.env.example` for which environment variables
+ you need to set before running this bot.
 We recommend you to create a new GitHub account for your bot, which is going to be
   used to author the comments.
+
+Now run
+```bash
+npm install
+npm start
+```
+
+### Using Docker
+A Dockerfile is also provided, you can use it to run the bot:
+
+```bash
+docker build -t graphql-vigilant-bot .
+docker run --env-file ./.env -p 7010:7010 graphql-vigilant-bot
+```
+Or use `docker-compose`:
+```bash
+docker-compose up
+```
+
+The bot will be available at http://localhost.
+
+You can also deploy directly to Heroku:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Setup
 
 You need to add a webhook pointing to this bot, use `application/json` as 
  the `Content Type`, and select the `Pull request` event.
+Make sure to set a secret, and keep note of it, you will need to add it to your `.env` file.
 
 ## Development
 

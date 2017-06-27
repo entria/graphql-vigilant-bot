@@ -11,7 +11,7 @@ const gh = new GitHubApi({
   host: 'api.github.com',
   headers: {
     'User-Agent':
-      `GraphQLFindBreakingChanges-Bot/${version} (+https://github.com/entria/graphql-find-breaking-changes-bot)`,
+      `GraphQLVigilantBot/${version} (+https://github.com/entria/graphql-vigilant-bot)`,
   },
   followRedirects: false,
   timeout: 5000,
