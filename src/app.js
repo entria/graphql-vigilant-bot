@@ -48,6 +48,11 @@ const signBlob = (key, blob) => {
 
 const app = new Koa();
 app.use(async (ctx, next) => {
+
+  if (!ctx.request.headers['content-length'] || !ctx.request.headers['content-type']) {
+    return;
+  }
+
   ctx.request.rawBody = await getRawBody(ctx.req, {
     length: ctx.request.headers['content-length'],
     limit: '5mb',
