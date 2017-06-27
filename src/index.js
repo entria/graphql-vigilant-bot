@@ -8,5 +8,5 @@ const port = process.env.PORT || 7010;
 
 (async () => {
   await app.listen(port);
-  console.log(`Bot started on port ${port}`);
+  console.log(`GraphQLVigilantBot started on port ${port}`);
 })();

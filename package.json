@@ -1,5 +1,5 @@
 {
-  "name": "@entria/graphql-findbreakingchanges-bot",
+  "name": "@entria/graphql-vigilant-bot",
   "version": "0.0.1",
   "author": "Jonathan Cardoso Machado <me@jonathancardoso.com>",
   "dependencies": {
@@ -37,7 +37,7 @@
   },
   "main": "dist/index.js",
   "pre-commit": "lint:staged",
-  "repository": "https://github.com/entria/graphql-find-breaking-changes-bot",
+  "repository": "https://github.com/entria/graphql-vigilant-bot",
   "scripts": {
     "build": "babel src -d dist",
     "flow": "flow",
@@ -45,7 +45,8 @@
     "lint:staged": "lint-staged",
     "prepublish": "npm run build",
     "prettier": "prettier --write --single-quote true --trailing-comma all --print-width 120 src/**/*.js",
-    "start": "nodemon --ignore dist/ src/index.js --exec babel-node",
+    "start": "npm run build && node dist/index.js",
+    "start:watch": "nodemon --ignore dist/ src/index.js --exec babel-node",
     "watch": "babel -w -d ./dist ./src"
   }
 }

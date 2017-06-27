@@ -1,4 +1,4 @@
-# graphql-findbreakingchanges-bot
+# GraphQLVigilantBot
 
 ## Installation
 First clone this repository, then check `.env.example` for which environment variables
@@ -16,8 +16,8 @@ npm start
 A Dockerfile is also provided, you can use it to run the bot:
 
 ```bash
-docker build -t graphql-findbreakingchanges-bot .
-docker run --env-file ./.env -p 7010:7010 graphql-findbreakingchanges-bot
+docker build -t graphql-vigilant-bot .
+docker run --env-file ./.env -p 7010:7010 graphql-vigilant-bot
 ```
 
 #### docker-compose
