@@ -33,6 +33,7 @@ Or you can deploy directly to Heroku:
 
 You need to add a webhook pointing to this bot, use `application/json` as 
  the `Content Type`, and select the `Pull request` event.
+Make sure to set a secret, and keep note of it, you will need to add it to your `.env` file.
 
 ## Development
 
