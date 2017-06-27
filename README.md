@@ -1,14 +1,33 @@
 # graphql-findbreakingchanges-bot
 
 ## Installation
-Clone this repository, then run
-
-`yarn install` or `npm install`
-
-Check `.env.example` for which environment variables you need to set before
-  running this bot.
+First clone this repository, then check `.env.example` for which environment variables
+ you need to set before running this bot.
 We recommend you to create a new GitHub account for your bot, which is going to be
   used to author the comments.
+
+Now run
+```bash
+npm install
+npm start
+```
+
+### Using Docker
+A Dockerfile is also provided, you can use it to run the bot:
+
+```bash
+docker build -t graphql-findbreakingchanges-bot .
+docker run --env-file ./.env -p 7010:7010 graphql-findbreakingchanges-bot
+```
+
+#### docker-compose
+
+`docker-compose up`
+
+The bot will be available at http://localhost.
+
+Or you can deploy directly to Heroku:
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Setup
 

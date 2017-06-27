@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    restart: always
+    ports:
+      - "80:7010"
+    environment:
+      GITHUB_TOKEN: "${GITHUB_TOKEN}"
+      GITHUB_WEBHOOK_SECRET: "${GITHUB_WEBHOOK_SECRET}"
