@@ -3,6 +3,7 @@
   "parser": "babel-eslint",
   "rules": {
     "no-console": 0,
+    "no-restricted-syntax": 0,
     "max-len": [1, 120, 2],
     "no-param-reassign": [2, { "props": false }],
     "no-continue": 0,

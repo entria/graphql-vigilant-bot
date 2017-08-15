@@ -10,3 +10,12 @@ dotenvSafe.load({
   allowEmptyValues: true,
   sample: root('.env.example'),
 });
+
+export const {
+  GITHUB_WEBHOOK_SECRET,
+  PORT,
+} = ((process.env: any): {
+  GITHUB_WEBHOOK_SECRET: string,
+  PORT: ?string,
+  [string]: string,
+});

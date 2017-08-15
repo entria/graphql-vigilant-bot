@@ -35,7 +35,7 @@
       "git add"
     ]
   },
-  "main": "dist/index.js",
+  "main": "dist/bot.js",
   "pre-commit": "lint:staged",
   "repository": "https://github.com/entria/graphql-vigilant-bot",
   "scripts": {
