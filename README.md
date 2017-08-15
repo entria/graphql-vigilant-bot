@@ -38,7 +38,7 @@ Make sure to set a secret, and keep note of it, you will need to add it to your 
 
 ## Development
 
-Since this bot depends on Github webhooks, we gonna need to use [ngrok]()
+Since this bot depends on Github webhooks, we gonna need to use [ngrok](https://ngrok.com/download)
  to redirect the webhook request to our machine.
 
 Run:
